@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{B511C1F9-448F-D8E4-28A0-D8802F56619A}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UnrealCSharpDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
