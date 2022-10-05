@@ -1,0 +1,3 @@
+[submodule "Plugins/UnrealCSharp"]
+	path = Plugins/UnrealCSharp
+	url = git@github.com:crazytuzi/UnrealCSharp.git
