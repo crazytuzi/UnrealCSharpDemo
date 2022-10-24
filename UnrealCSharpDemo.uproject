@@ -7,7 +7,18 @@
 		{
 			"Name": "UnrealCSharpDemo",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "UnrealCSharp",
+			"Enabled": true,
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
 		}
 	]
 }
