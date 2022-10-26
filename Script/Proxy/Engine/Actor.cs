@@ -1,6 +1,6 @@
-﻿namespace Script.Proxy.Engine
+﻿namespace Script.Engine
 {
-    public class AActorProxy : UObjectProxy
+    public class AActor : UObject
     {
     }
 }

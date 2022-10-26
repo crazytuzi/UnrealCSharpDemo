@@ -1,10 +1,10 @@
 ﻿using System;
-using Script.Proxy.Engine;
+using Script.Engine;
 using Script.Reflection.Property;
 
-namespace Script.Proxy.Game
+namespace Script.Game
 {
-    public class ATestPropertyActorProxy : AActorProxy
+    public partial class ATestPropertyActor : AActor
     {
         public UInt16 UInt16Value
         {
@@ -90,6 +90,18 @@ namespace Script.Proxy.Game
             }
 
             set => PropertyUtils.SetProperty(this, "FloatValue", value);
+        }
+
+        public UObject ObjectValue
+        {
+            get
+            {
+                PropertyUtils.GetProperty(this, "ObjectValue", out UObject value);
+
+                return value;
+            }
+
+            set => PropertyUtils.SetProperty(this, "ObjectValue", value);
         }
 
         public double DoubleValue

@@ -1,9 +1,9 @@
-﻿using Script.Proxy.Engine;
+﻿using Script.Engine;
 using Script.Reflection.Function;
 
-namespace Script.Proxy.Game
+namespace Script.Game
 {
-    public class ATestFunctionActorProxy : AActorProxy
+    public partial class ATestFunctionActor : AActor
     {
         public void TestEmpty()
         {

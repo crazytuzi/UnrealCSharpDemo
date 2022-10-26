@@ -1,9 +1,9 @@
 ﻿using System;
-using Script.Proxy.Game;
+using Script.Engine;
 
 namespace Script.Game
 {
-    public class ATestFunctionActor : ATestFunctionActorProxy
+    public partial class ATestFunctionActor : AActor
     {
         public void ReceiveBeginPlay()
         {

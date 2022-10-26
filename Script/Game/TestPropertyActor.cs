@@ -1,9 +1,8 @@
 ﻿using System;
-using Script.Proxy.Game;
 
 namespace Script.Game
 {
-    public class ATestPropertyActor : ATestPropertyActorProxy
+    public partial class ATestPropertyActor
     {
         public void ReceiveBeginPlay()
         {
@@ -147,6 +146,26 @@ namespace Script.Game
                 Console.WriteLine(FloatValue);
 
                 Console.WriteLine("Get FloatValue End");
+            }
+            
+            {
+                Console.WriteLine("Get ObjectValue Start");
+
+                Console.WriteLine(ObjectValue);
+
+                Console.WriteLine("Get ObjectValue End");
+
+                Console.WriteLine("Set ObjectValue Start");
+
+                ObjectValue = this;
+
+                Console.WriteLine("Set ObjectValue End");
+
+                Console.WriteLine("Get ObjectValue Start");
+
+                Console.WriteLine(ObjectValue);
+
+                Console.WriteLine("Get ObjectValue End");
             }
 
             {
